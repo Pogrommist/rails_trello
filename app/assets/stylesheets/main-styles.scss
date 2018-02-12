@@ -1,0 +1,26 @@
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 1.6rem;
+  font-family: SFUI;
+}
+
+@font-face {
+  font-family: 'SFUI';
+  src: font_url('SFUI-Regular.woff') format('woff'),
+  font_url('SFUI-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'SFUI';
+  src: font_url('SFUI-Bold.woff') format('woff'),
+  font_url('SFUI-Bold.otf') format('opentype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'SFUI';
+  src: font_url('SFUI-Heavy.woff') format('woff'),
+  font_url('SFUI-Heavy.otf') format('opentype');
+  font-weight: 900;
+}

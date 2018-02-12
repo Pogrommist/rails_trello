@@ -1,0 +1,10 @@
+- if user_signed_in?
+  .header
+    .header-container
+      = image_tag current_user.avatar, class: 'header-container__avatar'
+      p.header-container__fullname = current_user.first_name + ' ' + current_user.last_name
+      = link_to 'Выйти', destroy_user_session_path, method: :delete, class: 'header-container__link'
+      = link_to 'Редактировать', edit_user_registration_path, class: 'header-container__link'
+- else
+  = link_to 'Войти', new_user_session_path, class: 'header-container__link'
+  = link_to 'Регистрация', new_user_registration_path, class: 'header-container__link'
