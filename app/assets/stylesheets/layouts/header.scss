@@ -1,0 +1,29 @@
+@import "variables";
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  width: 1280px;
+  &__avatar {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2.5rem;
+  }
+  &__link {
+    padding: 1rem;
+    text-decoration: none;
+    color: $black;
+    &:hover {
+      background-color: $dim_gray;
+      color: $white;
+    }
+  }
+  &__fullname {
+    padding: 0 1rem;
+    font-weight: 600;
+  }
+}
