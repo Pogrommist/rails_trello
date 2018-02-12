@@ -6,6 +6,10 @@ body {
   font-family: SFUI;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 @font-face {
   font-family: 'SFUI';
   src: font_url('SFUI-Regular.woff') format('woff'),
